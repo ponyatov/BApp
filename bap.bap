@@ -1,0 +1,43 @@
+# metacircular
+
+module  bapp
+title   Application Builder
+author  Dmitry Ponyatov <dponyatov@gmail.com>
+github  https://github.com/ponyatov/BApp/
+
+file    main.ml
+file    .vscode/settings.json
+file    README.md
+file    Makefile
+file    .gitignore
+file    bap_lexer.mll
+file    bap_parser.mly
+file    frame.ml
+
+== .gitignore ==
+*~
+*.swp
+*.log
+
+bapp
+*.cm?
+*.mli
+*lexer.ml
+*parser.ml
+================
+
+== .vscode/settings.json ==
+{
+    // configure recommendation: bind F12 key on this command for handy projects rebuild
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.build",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence","args": {"text": "\u000Dclear ; make\u000D"}}
+            ],
+        },
+    ],
+    "editor.tabSize": 4,
+}
+===========================

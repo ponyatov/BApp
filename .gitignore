@@ -1,0 +1,9 @@
+*~
+*.swp
+*.log
+
+bapp
+*.cm?
+*.mli
+*lexer.ml
+*parser.ml
